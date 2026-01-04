@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="Day 1 - Basic Chat/Day 1 - Basic Chat.csproj" />
+  <Project Path="Day 2 - CreateFunctionFromPrompt/Day 2 - CreateFunctionFromPrompt.csproj" />
+  <Project Path="Day 3 - Native C# Plugins/Day 3 - Native C# Plugins.csproj" />
+  <Project Path="Day 4 - Memory &amp; Embeddings - RAG/Day 4 - Memory &amp; Embeddings - RAG.csproj" />
+</Solution>
