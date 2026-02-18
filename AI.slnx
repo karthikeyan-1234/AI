@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/Day 9 - Advanced Planners/">
+    <Project Path="Common/Common.csproj" Id="5ad7064c-8150-4ec6-84d3-6cc3655055fd" />
+    <Project Path="FunctionCallingStepwisePlanner/FunctionCallingStepwisePlanner.csproj" Id="98dbb789-e6e2-4eca-87e1-9c62c6c91c1a" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
   </Folder>
@@ -6,4 +10,6 @@
   <Project Path="Day 2 - CreateFunctionFromPrompt/Day 2 - CreateFunctionFromPrompt.csproj" />
   <Project Path="Day 3 - Native C# Plugins/Day 3 - Native C# Plugins.csproj" />
   <Project Path="Day 4 - Memory &amp; Embeddings - RAG/Day 4 - Memory &amp; Embeddings - RAG.csproj" />
+  <Project Path="Day 5 - Document Processing &amp; Chunking/Day 5 - Document Processing &amp; Chunking.csproj" Id="4aae7091-54eb-44a8-a4b7-feb1abe1a9fc" />
+  <Project Path="Day 6 - Vector Database Integration with Qdrant/Day 6 - Vector Database Integration with Qdrant.csproj" Id="39aeab07-9ca4-4102-82b4-0a61f92e2f2e" />
 </Solution>

@@ -15,7 +15,8 @@ kernelBuilder.AddOpenAIChatCompletion(
 
 
 var kernel = kernelBuilder.Build();
-kernel.Plugins.AddFromType<MachinePlugin>();
+//kernel.Plugins.AddFromType<MachinePlugin>();
+kernel.ImportPluginFromType<MachinePlugin>();
 
 
 var chatService = kernel.GetRequiredService<IChatCompletionService>();
@@ -36,6 +37,9 @@ try
         kernel: kernel
 
     );
+
+    chatHistory.AddAssistantMessage(response.Content!); // keep history growing
+
     Console.WriteLine($"📝 Response:\n{response.Content}\n");
 }
 catch (HttpRequestException ex) 

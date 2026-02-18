@@ -17,8 +17,8 @@ try
     // 1. Setup services
     Console.WriteLine("\n1. Setting up services...");
     var kernel = KernelFactory.Create(settings);
-    var embeddingService = new SemanticKernelEmbeddingService(kernel);
-    var generationService = new SemanticKernelGenerationService(kernel);
+    var embeddingService = new SKEmbeddingGenerationService(kernel);
+    var generationService = new SKTextGenerationService(kernel);
     Console.WriteLine("✅ Services ready");
 
     // 2. Test documents (simple manufacturing knowledge base)
