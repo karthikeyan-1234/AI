@@ -24,6 +24,7 @@ var kernel = kernelBuilder
         endpoint: new Uri("http://192.168.1.150:11434/v1"),  // Local Ollama OpenAI-compatible API
         apiKey: "ollama",  // Required dummy key for OpenAI client
         httpClient: httpClient  // Custom client with longer timeout
+        
     )
     .Build();
 
@@ -62,7 +63,8 @@ OpenAIPromptExecutionSettings executionSettings = new OpenAIPromptExecutionSetti
 {
     Temperature = 0.2f,  // For accurate results
     MaxTokens = 500,     // Reasonable limit for function results
-    FunctionChoiceBehavior = FunctionChoiceBehavior.Auto()
+    FunctionChoiceBehavior = FunctionChoiceBehavior.Auto(autoInvoke: true),
+    ChatSystemPrompt = "You must NEVER assume product IDs or ratings.\r\nYou must ALWAYS call Search first to obtain product IDs.\r\nThen call GetProductRating using returned IDs.\r\nUse only real function outputs for calculations."
 };
 
 while (true)
